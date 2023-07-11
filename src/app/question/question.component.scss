@@ -1,0 +1,40 @@
+
+.example-sidenav {
+    padding: 20px;
+  }
+  .fa-bars{
+    font-size: 23px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 0;
+    margin-left: 10px;
+  }
+ .example-sidenav-content{
+    background: blue;
+    color: white;
+ }
+ #quizApp{
+    background-color: white;
+    margin-top: 20px;
+ }
+ #img_head{
+    height: 80.2em;
+  }
+  h3{
+    font-family: cursive;
+  }
+  li {
+   
+    cursor: pointer;
+    margin:10px 0;
+  }
+  li .card{
+    border-radius: 5px;
+  }
+  li .card:hover{
+    border: 1px solid #2B3467;
+    background-color: #B0DAFF;
+  }
+  tbody, td, tfoot, th, thead, tr{
+    border-style: none;
+  }

@@ -1,0 +1,55 @@
+
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+         <p class="fs-6 p-2 m-4 text-secondary" routerLink="/header" style="cursor: pointer;"><i class="fa-solid fa-house"></i>  Dashboard</p>
+      
+    </mat-drawer>
+  
+    <div class="example-sidenav-content">
+        <i class="fa-solid fa-bars"  mat-button (click)="drawer.toggle()"></i>
+        <!-- <i class="fa-sharp fa-solid fa-bars" mat-button (click)="drawer.toggle()"></i> -->
+        <div class="container-fluid" id="quizApp">
+            <div class="row">
+                <div class="col-md-6"  style="padding: 0;">
+ 
+             
+<img src="../assets/images/sidebar-banner.png" alt="" width="500px"> 
+</div>
+                <div class="col-md-6 text-dark">
+<h1 class="display-5 fw-bold mt-3 ">
+Welcome to Quiz App
+</h1>
+<p class="fs-5"> This quiz will contain 10 questions.Each question holds 10 points</p>
+
+<h2 class="fw-bold text-danger">Rules:</h2>
+<ol class="fs-6">
+    <li>Correct Question gives you <span class="text-success">10 point</span></li>
+    <li>Incorrect question gives you <span class="text-danger">-10 point</span></li>
+    <li>You will have <span class="text-primary">60 sec</span>  to answer each question</li>
+    <li>Refreshing the page will <span class="text-danger">reset the quiz</span> </li>
+</ol>
+<marquee direction="left"  class="p-2"><cite class="fs-2 mt-3 ">All The Best !!!</cite></marquee>
+
+<div class=" container my-3">
+    <!-- <label for="">Enter Your Name</label>
+    <input type="text" class="form-control"> -->
+    <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-6">
+          <label for="validationCustom01" class="form-label fs-6">Enter Your First name</label>
+          <input #name type="text" class="form-control" id="validationCustom01" value="" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-12">
+            <button class="btn btn-success" type="submit" routerLink="/question" (click)="startQuiz()">Start Quiz</button>
+          </div>
+        </form>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+  
+  </mat-drawer-container>
