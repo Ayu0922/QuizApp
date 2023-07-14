@@ -21,7 +21,7 @@
 
                 <div class="col-md-8 text-dark justify-content-center">
                     <div class="card mt-4">
-                       <div class="d-flex  justify-content-between p-3">
+                       <div class="d-flex  justify-content-between p-3" id="heading">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png" alt="" width="100px">  
 
                         <div class="quiz-header ">
@@ -29,8 +29,9 @@
                             <h3 class="fs-4 text-danger">Angular & Typescript Quiz</h3>
                             <span class="fs-5 text-primary" style="font-style: italic;">Welcome {{name}}</span>
                         </div>
+                       
                        </div>
-
+                     
 
                        <ng-container *ngIf="!isQuizCompleted">
                         <div class="d-flex justify-content-around py-3">
@@ -71,14 +72,10 @@
 
               <!--Result container -->
                        <ng-container *ngIf="isQuizCompleted">
-                      <div class="d-flex justify-content-between">
+                      <div class="d-flex justify-content-between mt-2">
                        <div class="row"> 
                       <div class="result text-center col-md-8 col-sm-12">
-                        <h3 class="fs-3">Congratulation !!! <br>You have completed the quiz. <br>Below is your result : </h3>
-                        <!-- <p class="fs-4">Total Question Attempted : {{questionList.length}}</p>
-                        <p class="fs-4">Total Corret Answered    :{{correctAnswer}}</p>
-                        <p class="fs-4">Total Wrong Answered     :{{incorrectAnswer}}</p>
-                        <p class="fs-4">Your Score               : {{points}}</p> -->
+                        <h3 class="fs-3 mt-3">Congratulation !!! <br>You have completed the quiz. <br>Below is your result : </h3>
                        <div class="card m-3 p-2">
                         <table class="table">
                             <thead>

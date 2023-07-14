@@ -38,3 +38,10 @@
   tbody, td, tfoot, th, thead, tr{
     border-style: none;
   }
+  #heading{
+    border: 1px solid;
+    border-top-color: rgba(0,0,0,.125);
+    border-left-color: rgba(0,0,0,.125);
+    border-right-color: rgba(0,0,0,.125);
+    border-bottom-color: gray;
+  }
