@@ -32,12 +32,6 @@ Welcome page of project
 
 
 
-Questions of Quiz
 
-![image](https://github.com/Ayu0922/QuizApp/assets/85955380/057d9d5a-90e0-4cc9-9233-72e612a6c903)
-
-Final Result Page
-
-![image](https://github.com/Ayu0922/QuizApp/assets/85955380/76eb1eb6-a1f1-41f6-8c89-71e9ab84c87d)
 
 
